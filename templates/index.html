@@ -1,98 +1,11 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html'%}
+{% load static%}
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>JESP HOSPITAL</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
 
-  <!-- Favicons -->
-  <link href="{% static 'assets/img/favicon logo.png.png' %}" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+{% block content %}
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
-  
-
-  <!-- Main CSS File -->
-  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Medicio
-  * Template URL: https://bootstrapmade.com/medicio-free-bootstrap-theme/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body class="index-page">
-
-  <header id="header" class="header sticky-top">
-
-    <div class="topbar d-flex align-items-center">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="d-none d-md-flex align-items-center">
-          <i class="bi bi-clock me-1"></i> Monday - Saturday, 8AM to 10PM
-        </div>
-        <div class="d-flex align-items-center">
-          <i class="bi bi-phone me-1"></i> Call us now +1 5589 55488 55
-        </div>
-      </div>
-    </div><!-- End Top Bar -->
-
-    <div class="branding d-flex align-items-center">
-
-      <div class="container position-relative d-flex align-items-center justify-content-end">
-        <a href="index.html" class="logo d-flex align-items-center me-auto">
-          <img src="{% static 'assets/img/jesp.jpg' %}" alt="">
-          <!-- Uncomment the line below if you also wish to use a text logo -->
-          <!-- <h1 class="sitename">Medicio</h1>  -->
-        </a>
-
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="#hero" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#departments">Departments</a></li>
-            <li><a href="#doctors">Doctors</a></li>
-            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-
-        <a class="cta-btn" href="index.html#appointment">Make an Appointment</a>
+<a class="cta-btn" href="starter/">Make an Appointment</a>
 
       </div>
 
@@ -110,8 +23,9 @@
         <div class="carousel-item active">
           <img src="{% static 'assets/img/hero-carousel/hero-carousel-1.jpg' %}" alt="">
           <div class="container">
-            <h2>Welcome to Medicio</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h2> Healing Hands, Compassionate Hearts</h2>
+            <p>Discover a hospital where care goes beyond medicine. We’re here for you—with expert staff, modern facilities, and heartfelt compassion.
+            </p>
             <a href="#about" class="btn-get-started">Read More</a>
           </div>
         </div><!-- End Carousel Item -->
@@ -119,8 +33,9 @@
         <div class="carousel-item">
           <img src="{% static 'assets/img/hero-carousel/hero-carousel-2.jpg' %}" alt="">
           <div class="container">
-            <h2>At vero eos et accusamus</h2>
-            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
+            <h2>We're Here When You Need Us Most</h2>
+            <p>Our emergency team is ready around the clock to provide immediate, life-saving care. Fast, reliable, and always open.
+            </p>
             <a href="#about" class="btn-get-started">Read More</a>
           </div>
         </div><!-- End Carousel Item -->
@@ -128,11 +43,28 @@
         <div class="carousel-item">
           <img src="{% static 'assets/img/hero-carousel/hero-carousel-3.jpg' %}" alt="">
           <div class="container">
-            <h2>Temporibus autem quibusdam</h2>
-            <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
+            <h2>Caring for Mothers and Their Little Ones</h2>
+            <p> From prenatal support to pediatric check-ups, we’re dedicated to nurturing healthy families with love and expertise.
+            </p>
             <a href="#about" class="btn-get-started">Read More</a>
           </div>
         </div><!-- End Carousel Item -->
+        <div class="carousel-item">
+          <img src="{% static 'assets/img/hero-carousel/hero-carousel-3.jpg' %}" alt="">
+          <div class="container">
+            <h2> Precision in Every Diagnosis</h2>
+            <p> Our cutting-edge labs and imaging tools help us detect, diagnose, and treat with accuracy—so you get the right care, fast.</p>
+            <a href="#about" class="btn-get-started">Read More</a>
+          </div>
+        </div>   <!--End Carousel Item-->
+        <div class="carousel-item">
+          <img src="{% static 'assets/img/hero-carousel/hero-carousel-3.jpg' %}" alt="">
+          <div class="container">
+            <h2>Your Health, Your Schedule</h2>
+            <p> Booking with JESP is simple and flexible. Get started on your wellness journey with just a few clicks.</p>
+            <a href="#about" class="btn-get-started">Read More</a>
+          </div>
+        </div>   <!--End Carousel Item-->
 
         <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
@@ -149,49 +81,55 @@
     </section><!-- /Hero Section -->
 
     <!-- Featured Services Section -->
-    <section id="featured-services" class="featured-services section">
+    <section id="why-choose-us" class="featured-services section">
 
       <div class="container">
-
+    
+        <div class="section-header text-center mb-5">
+          <h2>Why Choose JESP Hospital</h2>
+          <p>At JESP Hospital, we combine technology, compassion, and trust to give you the best care experience possible.</p>
+        </div>
+    
         <div class="row gy-4">
-
+    
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
-              <div class="icon"><i class="fas fa-heartbeat icon"></i></div>
-              <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <div class="icon"><i class="fas fa-user-md icon"></i></div>
+              <h4><a href="#" class="stretched-link">Experienced Medical Team</a></h4>
+              <p>Our doctors, nurses, and specialists are highly skilled and committed to compassionate, quality care.</p>
             </div>
-          </div><!-- End Service Item -->
-
+          </div><!-- End Item -->
+    
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
-              <div class="icon"><i class="fas fa-pills icon"></i></div>
-              <h4><a href="" class="stretched-link">Sed ut perspici</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <div class="icon"><i class="fas fa-hospital icon"></i></div>
+              <h4><a href="#" class="stretched-link">Modern Facilities</a></h4>
+              <p>State-of-the-art equipment and well-equipped departments ensure accurate diagnosis and effective treatment.</p>
             </div>
-          </div><!-- End Service Item -->
-
+          </div><!-- End Item -->
+    
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
-              <div class="icon"><i class="fas fa-thermometer icon"></i></div>
-              <h4><a href="" class="stretched-link">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <div class="icon"><i class="fas fa-headset icon"></i></div>
+              <h4><a href="#" class="stretched-link">24/7 Emergency Support</a></h4>
+              <p>We're always ready, day or night, with a dedicated team for emergencies and critical care situations.</p>
             </div>
-          </div><!-- End Service Item -->
-
+          </div><!-- End Item -->
+    
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
-              <div class="icon"><i class="fas fa-dna icon"></i></div>
-              <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <div class="icon"><i class="fas fa-heart icon"></i></div>
+              <h4><a href="#" class="stretched-link">Patient-Centered Approach</a></h4>
+              <p>We treat every patient with respect, empathy, and a personalized plan that supports full recovery.</p>
             </div>
-          </div><!-- End Service Item -->
-
+          </div><!-- End Item -->
+    
         </div>
-
+    
       </div>
-
-    </section><!-- /Featured Services Section -->
+    
+    </section><!-- /Why Choose Us Section -->
+    
 
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section accent-background">
@@ -201,7 +139,7 @@
           <div class="col-xl-10">
             <div class="text-center">
               <h3>In an emergency? Need help now?</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Your health can’t wait — our emergency team is available 24/7 to provide immediate care. Don’t hesitate.</p>
               <a class="cta-btn" href="#appointment">Make an Appointment</a>
             </div>
           </div>
@@ -216,7 +154,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About Us<br></h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Compassion. Excellence. Trust.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -229,18 +167,19 @@
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
             <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              At JESP Hospital, we believe that exceptional healthcare begins with empathy. Our motto, "Healing Hands, Compassionate Hearts," reflects our commitment to combining advanced medical care with genuine compassion.
+
+We serve our community with integrity, professionalism, and a patient-first mindset. Whether you’re visiting for a routine check-up or specialized treatment, our dedicated staff is here to support your health and healing journey every step of the way.
+            </p>
+            <p>
+              What Sets Us Apart
             </p>
             <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Experienced Medical Professionals
+                Our team of doctors, nurses, and specialists are not only highly trained but deeply compassionate. They listen, understand, and walk with you every step of the way.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>From modern operating theatres to fully equipped diagnostic labs, we invest in technology that enables better care and quicker recovery.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>JESP Hospital actively engages in outreach, health awareness campaigns, and affordable services to ensure that no one is left behind.</span></li>
             </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-            </p>
           </div>
         </div>
 
@@ -259,7 +198,7 @@
             <div class="stats-item d-flex align-items-center w-100 h-100">
               <i class="fas fa-user-md flex-shrink-0"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="40" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Doctors</p>
               </div>
             </div>
@@ -279,7 +218,7 @@
             <div class="stats-item d-flex align-items-center w-100 h-100">
               <i class="fas fa-flask flex-shrink-0"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Research Labs</p>
               </div>
             </div>
@@ -289,7 +228,7 @@
             <div class="stats-item d-flex align-items-center w-100 h-100">
               <i class="fas fa-award flex-shrink-0"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Awards</p>
               </div>
             </div>
@@ -299,10 +238,11 @@
 
       </div>
 
-    </section><!-- /Stats Section -->
+    </section>
+    <!-- /Stats Section -->
 
     <!-- Features Section -->
-    <section id="features" class="features section">
+    <!-- <section id="features" class="features section">
 
       <div class="container">
 
@@ -320,7 +260,7 @@
                 <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
               </div>
             </div><!-- End Icon Box -->
-
+<!-- 
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
               <i class="fa-solid fa-suitcase-medical flex-shrink-0"></i>
               <div>
@@ -329,7 +269,7 @@
               </div>
             </div><!-- End Icon Box -->
 
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="500">
+            <!-- <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="500">
               <i class="fa-solid fa-staff-snake flex-shrink-0"></i>
               <div>
                 <h4><a href="" class="stretched-link">Dine Pad</a></h4>
@@ -337,122 +277,123 @@
               </div>
             </div><!-- End Icon Box -->
 
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="600">
+            <!-- <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="600">
               <i class="fa-solid fa-lungs flex-shrink-0"></i>
               <div>
                 <h4><a href="" class="stretched-link">Tride clov</a></h4>
                 <p>Est voluptatem labore deleniti quis a delectus et. Saepe dolorem libero sit non aspernatur odit amet. Et eligendi</p>
               </div>
-            </div><!-- End Icon Box -->
-
+            </div> -->
+            <!-- End Icon Box -->
+<!-- 
           </div>
         </div>
 
       </div>
 
-    </section><!-- /Features Section -->
+    </section>
+    -->
+    <!-- /Features Section -->
 
-    <!-- Services Section -->
     <section id="services" class="services section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Our Services</h2>
+        <p>We offer a full spectrum of healthcare services designed to meet the diverse needs of our patients — with excellence, empathy, and expertise.</p>
       </div><!-- End Section Title -->
-
+    
       <div class="container">
-
+    
         <div class="row gy-4">
-
+    
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
+            <div class="service-item position-relative">
               <div class="icon">
                 <i class="fas fa-heartbeat"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Nesciunt Mete</h3>
+                <h3>Cardiology</h3>
               </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <p>Advanced heart care including diagnostics, treatment, and emergency cardiac interventions from trusted specialists.</p>
             </div>
           </div><!-- End Service Item -->
-
+    
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
               <div class="icon">
                 <i class="fas fa-pills"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Eosle Commodi</h3>
+                <h3>Pharmacy</h3>
               </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <p>On-site pharmacy providing quality, affordable medications with professional guidance from licensed pharmacists.</p>
             </div>
           </div><!-- End Service Item -->
-
+    
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <div class="icon">
                 <i class="fas fa-hospital-user"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Ledo Markt</h3>
+                <h3>Outpatient & Specialist Clinics</h3>
               </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <p>Comprehensive consultations and treatments from experienced specialists across multiple medical fields.</p>
             </div>
           </div><!-- End Service Item -->
-
+    
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
               <div class="icon">
                 <i class="fas fa-dna"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
+                <h3>Laboratory & Diagnostics</h3>
               </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="#" class="stretched-link"></a>
+              <p>Fully equipped lab services for accurate testing and diagnosis, supporting faster and better patient care.</p>
             </div>
           </div><!-- End Service Item -->
-
+    
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item position-relative">
               <div class="icon">
                 <i class="fas fa-wheelchair"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Velit Doloremque</h3>
+                <h3>Rehabilitation Services</h3>
               </a>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="#" class="stretched-link"></a>
+              <p>Physical therapy and post-surgical rehabilitation tailored to help patients recover strength, mobility, and independence.</p>
             </div>
           </div><!-- End Service Item -->
-
+    
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item position-relative">
               <div class="icon">
                 <i class="fas fa-notes-medical"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Dolori Architecto</h3>
+                <h3>General Medicine</h3>
               </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="#" class="stretched-link"></a>
+              <p>Primary care and internal medicine services addressing common illnesses, health screenings, and long-term wellness plans.</p>
             </div>
           </div><!-- End Service Item -->
-
+    
         </div>
-
+    
       </div>
-
+    
     </section><!-- /Services Section -->
-
+    
+    <!-- Services Section -->
+    
     <!-- Appointment Section -->
     <section id="appointment" class="appointment section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>MAKE AN APPOINTMENT</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Schedule your appointment with us today for expert care and compassionate service</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -511,8 +452,9 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Departments</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Our Medical Departments</h2>
+<p>JESP Hospital offers a wide range of specialized departments dedicated to providing expert care across every area of health. Our team of professionals ensures personalized treatment, modern technology, and compassionate support for every patient.</p>
+
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -543,8 +485,9 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Cardiology</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                    <p class="fst-italic">At JESP Hospital, our Cardiology Department is dedicated to the prevention, diagnosis, and treatment of heart and vascular conditions. With a team of experienced cardiologists, advanced diagnostic technology, and a patient-centered approach, we provide comprehensive care for everything from routine heart check-ups to complex cardiac emergencies.</p>
+                   
+                    <p>We offer services including ECG, echocardiography, stress testing, hypertension management, heart failure care, and interventional procedures. Whether you’re managing a chronic condition or experiencing new symptoms, our goal is to ensure your heart health is in expert hands.o</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="{% static 'assets/img/departments-1.jpg' %}" alt="" class="img-fluid">
@@ -555,8 +498,10 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Neurology</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                    <p class="fst-italic">The Neurology Department at JESP Hospital specializes in the diagnosis and treatment of disorders affecting the brain, spinal cord, and nervous system. Our expert neurologists are equipped to manage a wide range of conditions including stroke, epilepsy, migraines, Parkinson’s disease, multiple sclerosis, and neuropathies.</p>
+                    
+                    <p>Using advanced neuroimaging and diagnostic tools, we provide accurate assessments and personalized treatment plans to improve each patient’s quality of life. With compassionate care and cutting-edge expertise, we’re here to support you through every step of your neurological health journey.
+                    </p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="{% static 'assets/img/departments-2.jpg' %}" alt="" class="img-fluid">
@@ -567,8 +512,8 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Hepatology</h3>
-                    <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
-                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                    <p class="fst-italic">JESP Hospital’s Hepatology Department is dedicated to the diagnosis, treatment, and management of liver-related conditions. Our team of skilled hepatologists provides expert care for a wide range of liver diseases, including hepatitis, fatty liver disease, cirrhosis, and liver failure.</p>
+                    <p>We combine advanced diagnostics, non-invasive testing, and personalized treatment plans to ensure early detection and effective management. Whether you require routine liver check-ups or specialized long-term care, we are committed to delivering compassionate, comprehensive liver care</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="{% static 'assets/img/departments-3.jpg' %}" alt="" class="img-fluid">
@@ -579,8 +524,11 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Pediatrics</h3>
-                    <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
-                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
+                    <p class="fst-italic">At JESP Hospital, our Pediatrics Department provides specialized care for infants, children, and adolescents in a warm, family-friendly environment. Our pediatricians are dedicated to ensuring your child’s health and development through every stage of growth.</p>
+
+                    <p>From routine check-ups and vaccinations to the management of acute and chronic illnesses, we offer comprehensive pediatric services with a focus on safety, comfort, and compassion. We believe every child deserves a healthy start and a bright future — and we’re here to make that happen.
+
+                    </p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="{% static 'assets/img/departments-4.jpg' %}" alt="" class="img-fluid">
@@ -591,8 +539,10 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Ophthalmologists</h3>
-                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
-                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                    <p class="fst-italic">JESP Hospital’s Ophthalmology Department provides expert care for all your eye health needs. Our skilled ophthalmologists specialize in the diagnosis and treatment of conditions affecting vision, including cataracts, glaucoma, macular degeneration, and diabetic retinopathy.</p>
+                    <p>We offer state-of-the-art diagnostic tools and surgical interventions, from routine eye exams to advanced procedures. Whether you need corrective lenses, eye surgery, or ongoing management of a chronic eye condition, our team is committed to helping you see the world clearly and comfortably.
+
+                    </p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="{% static 'assets/img/departments-5.jpg' %}" alt="" class="img-fluid">
@@ -613,7 +563,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Hear from some of our patients about their experiences at JESP Hospital.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -650,12 +600,12 @@
               <div class="testimonial-item" "="">
             <p>
               <i class=" bi bi-quote quote-icon-left"></i>
-                <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                <span>The care and attention I received from the cardiology team at JESP Hospital saved my life. I’m beyond grateful for their professionalism and the way they made me feel at ease during my treatment.<span>
                 <i class="bi bi-quote quote-icon-right"></i>
                 </p>
                 <img src="{% static 'assets/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <h3>John Smith</h3>
+                <h4>Heart Patient</h4>
               </div>
             </div><!-- End testimonial item -->
 
@@ -663,12 +613,12 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <span>I can’t thank the pediatrics team enough for their care during my child’s treatment. The doctors were incredibly kind, and the nurses made us feel like family. We felt supported every step of the way.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
                 <img src="{% static 'assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
+                <h3>Sarah Williams</h3>
+                <h4>Parent of Young Patient</h4>
               </div>
             </div><!-- End testimonial item -->
 
@@ -676,12 +626,12 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                  <span>After my surgery, I felt more confident in my recovery thanks to the ongoing support from the neurology team. The doctors provided clear explanations and the post-op care was exceptional.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
                 <img src="{% static 'assets/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
+                <h3>Michael Thompson</h3>
+                <h4>Neurology Patient</h4>
               </div>
             </div><!-- End testimonial item -->
 
@@ -689,12 +639,12 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                  <span>I had a fantastic experience at JESP Hospital. The entire staff was welcoming, and the ophthalmology team took extra care during my treatment. My vision has improved significantly, and I feel so much better.<span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
                 <img src="{% static 'assets/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
+                <h3>Alice Green </h3>
+                <h4>Ophthalmology Patient</h4>
               </div>
             </div><!-- End testimonial item -->
 
@@ -702,12 +652,12 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                  <span>The hepatology department provided me with the best care during my treatment for liver disease. The doctors were always attentive and explained every step of the process.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
                 <img src="{% static 'assets/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
+                <h3>Linda Brown</h3>
+                <h4>Hepatology Patient</h4>
               </div>
             </div><!-- End testimonial item -->
 
@@ -724,89 +674,91 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Doctors</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Meet Our Doctors</h2>
+        <p>Our team of highly skilled professionals is dedicated to providing exceptional care to every patient.</p>
       </div><!-- End Section Title -->
-
+      
       <div class="container">
-
+      
         <div class="row gy-4">
-
+      
+          <!-- Doctor 1 -->
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member">
               <div class="member-img">
-                <img src="{% static 'assets/img/doctors/doctors-1.jpgg' %}" class="img-fluid" alt="">
+                <img src="{% static 'assets/img/doctors/doctors-1.jpg' %}" class="img-fluid" alt="Dr. Walter White">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://twitter.com"><i class="bi bi-twitter"></i></a>
+                  <a href="https://facebook.com"><i class="bi bi-facebook"></i></a>
+                  <a href="https://instagram.com"><i class="bi bi-instagram"></i></a>
+                  <a href="https://linkedin.com"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Walter White</h4>
+                <h4>Dr. Walter White</h4>
                 <span>Chief Medical Officer</span>
               </div>
             </div>
           </div><!-- End Team Member -->
-
+      
+          <!-- Doctor 2 -->
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member">
               <div class="member-img">
-                <img src="{% static 'assets/img/doctors/doctors-2.jpg' %}" class="img-fluid" alt="">
+                <img src="{% static 'assets/img/doctors/doctors-2.jpg' %}" class="img-fluid" alt="Dr. Sarah Johnson">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://twitter.com"><i class="bi bi-twitter"></i></a>
+                  <a href="https://facebook.com"><i class="bi bi-facebook"></i></a>
+                  <a href="https://instagram.com"><i class="bi bi-instagram"></i></a>
+                  <a href="https://linkedin.com"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
+                <h4>Dr. Sarah Johnson</h4>
                 <span>Anesthesiologist</span>
               </div>
             </div>
           </div><!-- End Team Member -->
-
+      
+          <!-- Doctor 3 -->
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member">
               <div class="member-img">
-                <img src="{% static 'assets/img/doctors/doctors-3.jpg' %}" class="img-fluid" alt="">
+                <img src="{% static 'assets/img/doctors/doctors-3.jpg' %}" class="img-fluid" alt="Dr. William Anderson">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://twitter.com"><i class="bi bi-twitter"></i></a>
+                  <a href="https://facebook.com"><i class="bi bi-facebook"></i></a>
+                  <a href="https://instagram.com"><i class="bi bi-instagram"></i></a>
+                  <a href="https://linkedin.com"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>Cardiology</span>
+                <h4>Dr. William Anderson</h4>
+                <span>Cardiologist</span>
               </div>
             </div>
           </div><!-- End Team Member -->
-
+      
+          <!-- Doctor 4 -->
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member">
               <div class="member-img">
-                <img src="{% static 'assets/img/doctors/doctors-4.jpg' %}" class="img-fluid" alt="">
+                <img src="{% static 'assets/img/doctors/doctors-4.jpg' %}" class="img-fluid" alt="Dr. Amanda Jepson">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://twitter.com"><i class="bi bi-twitter"></i></a>
+                  <a href="https://facebook.com"><i class="bi bi-facebook"></i></a>
+                  <a href="https://instagram.com"><i class="bi bi-instagram"></i></a>
+                  <a href="https://linkedin.com"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Amanda Jepson</h4>
+                <h4>Dr. Amanda Jepson</h4>
                 <span>Neurosurgeon</span>
               </div>
             </div>
           </div><!-- End Team Member -->
-
+      
         </div>
-
-      </div>
 
     </section><!-- /Doctors Section -->
 
@@ -816,7 +768,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Gallery</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Explore our state-of-the-art facilities and moments of care captured at our hospital.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -853,14 +805,14 @@
             }
           </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.jpg"><img src=" {% static 'assets/img/gallery/gallery-1.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg"><img src=" {% static 'assets/img/gallery/gallery-2.jpg' %} " class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.jpg"><img src=" {% static 'assets/img/gallery/gallery-3.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.jpg"><img src=" {% static 'assets/img/gallery/gallery-4.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.jpg"><img src=" {% static 'assets/img/gallery/gallery-5.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.jpg"><img src=" {% static 'assets/img/gallery/gallery-6.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg"><img src=" {% static 'assets/img/gallery/gallery-7.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img src="{% static 'assets/img/gallery/gallery-8.jpg' %}" class="img-fluid" alt=""></a></div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -873,162 +825,155 @@
     <section id="pricing" class="pricing section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-3">
-
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="pricing-item">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
+    <!-- /Pricing Section -->
+                
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Pricing</h2>
+      <p>Choose a plan that suits your needs. Simple and transparent pricing.</p>
+    </div><!-- End Section Title -->
+    
+    <div class="container">
+      <div class="row gy-3">
+    
+        <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="pricing-item">
+            <h3>Free</h3>
+            <h4><sup>£</sup>0<span> / month</span></h4>
+            <ul>
+              <li>Basic consultation</li>
+              <li>Health newsletter</li>
+              <li>Limited access to features</li>
+              <li class="na">Priority booking</li>
+              <li class="na">Dedicated support</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="#" class="btn-buy">Get Started</a>
             </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="pricing-item featured">
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
+          </div>
+        </div><!-- End Pricing Item -->
+    
+        <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="pricing-item featured">
+            <h3>Business</h3>
+            <h4><sup>£</sup>19<span> / month</span></h4>
+            <ul>
+              <li>General appointments</li>
+              <li>Basic diagnostics</li>
+              <li>24/7 support</li>
+              <li>Priority booking</li>
+              <li class="na">Advanced treatments</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="#" class="btn-buy">Buy Now</a>
             </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="pricing-item">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
+          </div>
+        </div><!-- End Pricing Item -->
+    
+        <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="pricing-item">
+            <h3>Developer</h3>
+            <h4><sup>£</sup>29<span> / month</span></h4>
+            <ul>
+              <li>All Business features</li>
+              <li>Specialist consultations</li>
+              <li>Extended care plans</li>
+              <li>Pharmacy discounts</li>
+              <li>Health analytics dashboard</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="#" class="btn-buy">Buy Now</a>
             </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="pricing-item">
-              <span class="advanced">Advanced</span>
-              <h3>Ultimate</h3>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
+          </div>
+        </div><!-- End Pricing Item -->
+    
+        <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="pricing-item">
+            <span class="advanced">Advanced</span>
+            <h3>Ultimate</h3>
+            <h4><sup>£</sup>49<span> / month</span></h4>
+            <ul>
+              <li>All Developer features</li>
+              <li>Personal health advisor</li>
+              <li>Full diagnostics access</li>
+              <li>Priority everything</li>
+              <li>Annual health review</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="#" class="btn-buy">Buy Now</a>
             </div>
-          </div><!-- End Pricing Item -->
-
-        </div>
-
+          </div>
+        </div><!-- End Pricing Item -->
+    
       </div>
-
-    </section><!-- /Pricing Section -->
-
+    </div>
+    
     <!-- Faq Section -->
     <section id="faq" class="faq section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Frequently Asked Questions</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Got questions? Here are some common queries we get from our patients.</p>
       </div><!-- End Section Title -->
-
+      
       <div class="container">
-
         <div class="row justify-content-center">
-
           <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
-
             <div class="faq-container">
-
+      
               <div class="faq-item">
-                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                <h3>What are your clinic's operating hours?</h3>
                 <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                  <p>We are open Monday to Saturday, from 8:00 AM to 6:00 PM. We are closed on Sundays and public holidays.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
+              </div>
+      
               <div class="faq-item">
-                <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
+                <h3>Do I need an appointment to see a doctor?</h3>
                 <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                  <p>Appointments are preferred to minimize waiting times, but we do accept walk-ins based on availability.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
+              </div>
+      
               <div class="faq-item">
-                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                <h3>Do you accept private insurance?</h3>
                 <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                  <p>Yes, we accept most major private health insurance providers. Please bring your insurance card when you visit.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
+              </div>
+      
               <div class="faq-item">
-                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
+                <h3>Can I get a prescription refill online?</h3>
                 <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                  <p>Yes, registered patients can request prescription refills through our patient portal or by calling reception.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
+              </div>
+      
               <div class="faq-item">
-                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
+                <h3>What should I bring for my first appointment?</h3>
                 <div class="faq-content">
-                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                  <p>Please bring a valid photo ID, your insurance details (if applicable), and any medical records relevant to your visit.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
+              </div>
+      
               <div class="faq-item">
-                <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
+                <h3>How do I cancel or reschedule an appointment?</h3>
                 <div class="faq-content">
-                  <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
+                  <p>You can call us directly or use the online portal at least 24 hours before your appointment to cancel or reschedule.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
+              </div>
+      
             </div>
-
-          </div><!-- End Faq Column-->
-
+          </div><!-- End Faq Column -->
         </div>
-
       </div>
+      
 
     </section><!-- /Faq Section -->
 
@@ -1037,186 +982,91 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you. Reach out for inquiries, bookings, or any questions you may have.</p>
       </div><!-- End Section Title -->
-
+    
+      <!-- Google Map -->
       <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
-        <iframe style="border:0; width: 100%; height: 370px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe style="border:0; width: 100%; height: 370px;" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.09387044235!2d-74.25357999999999!3d40.6976701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250b35df1142b%3A0xf8d8a58a388f3b66!2sNew%20York%2C%20USA!5e0!3m2!1sen!2s!4v1713078480725!5m2!1sen!2s" 
+                frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div><!-- End Google Maps -->
-
+    
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4">
-          <div class="col-lg-6 ">
+          <!-- Contact Info -->
+          <div class="col-lg-6">
             <div class="row gy-4">
-
+    
               <div class="col-lg-12">
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
                   <i class="bi bi-geo-alt"></i>
-                  <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <h3>Our Address</h3>
+                  <p>221B Baker Street, London, UK NW1 6XE</p>
                 </div>
-              </div><!-- End Info Item -->
-
+              </div>
+    
               <div class="col-md-6">
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
                   <i class="bi bi-telephone"></i>
                   <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
+                  <p>+44 20 7943 7999</p>
                 </div>
-              </div><!-- End Info Item -->
-
+              </div>
+    
               <div class="col-md-6">
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
                   <h3>Email Us</h3>
-                  <p>info@example.com</p>
+                  <p>jesphospital@gmail.com</p>
                 </div>
-              </div><!-- End Info Item -->
-
+              </div>
+    
             </div>
           </div>
-
+    
+          <!-- Contact Form -->
           <div class="col-lg-6">
             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
               <div class="row gy-4">
-
+    
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                 </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+    
+                <div class="col-md-6">
+                  <input type="email" name="email" class="form-control" placeholder="Your Email" required>
                 </div>
-
+    
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <input type="text" name="subject" class="form-control" placeholder="Subject" required>
                 </div>
-
+    
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
+                  <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
                 </div>
-
+    
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
+                  <div class="loading">Sending...</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
+                  <div class="sent-message">Your message has been sent. We’ll get back to you shortly!</div>
                   <button type="submit">Send Message</button>
                 </div>
-
+    
               </div>
             </form>
           </div><!-- End Contact Form -->
-
         </div>
-
       </div>
+    </section>
+    
 
     </section><!-- /Contact Section -->
 
   </main>
 
-  <footer id="footer" class="footer light-background">
+  {% endblock%}
 
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Medicio</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Hic solutasetp</h4>
-          <ul>
-            <li><a href="#">Molestiae accusamus iure</a></li>
-            <li><a href="#">Excepturi dignissimos</a></li>
-            <li><a href="#">Suscipit distinctio</a></li>
-            <li><a href="#">Dilecta</a></li>
-            <li><a href="#">Sit quas consectetur</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nobis illum</h4>
-          <ul>
-            <li><a href="#">Ipsam</a></li>
-            <li><a href="#">Laudantium dolorum</a></li>
-            <li><a href="#">Dinera</a></li>
-            <li><a href="#">Trodelas</a></li>
-            <li><a href="#">Flexo</a></li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Medicio</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
-      </div>
-    </div>
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-{% static 'assets/js/main.js' %}
-  <!-- Vendor JS Files -->
-  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
-  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
-  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
-  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
-  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
-
-  <!-- Main JS File -->
-  <script src=" {% static 'assets/js/main.js' %}"></script>
-
-</body>
-
-</html>
+  

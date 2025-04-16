@@ -1,0 +1,117 @@
+{% extends 'base.html'%}
+{% load static%}
+
+
+{% block content %}
+
+        <a class="cta-btn" href="index.html#appointment">Make an Appointment</a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <section id="appointment" class="contact section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Book an Appointment</h2>
+        <p>Fill out the form below to schedule an appointment with us. We’ll confirm your booking via email or phone.</p>
+      </div>
+    
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          
+          <!-- Appointment Info -->
+          <div class="col-lg-6">
+            <div class="row gy-4">
+    
+              <div class="col-lg-12">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Our Address</h3>
+                  <p>221B Baker Street, London, UK NW1 6XE</p>
+                </div>
+              </div>
+    
+              <div class="col-md-6">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Call Us</h3>
+                  <p>+44 20 7943 7999</p>
+                </div>
+              </div>
+    
+              <div class="col-md-6">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>jesphospital@gmail.com</p>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+    
+          <!-- Appointment Form -->
+          <div class="col-lg-6">
+            <form action="forms/appointment.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+              <div class="row gy-4">
+    
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                </div>
+    
+                <div class="col-md-6">
+                  <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                </div>
+    
+                <div class="col-md-6">
+                  <input type="text" name="phone" class="form-control" placeholder="Phone Number" required>
+                </div>
+    
+                <div class="col-md-6">
+                  <input type="date" name="date" class="form-control" required>
+                </div>
+    
+                <div class="col-md-6">
+                  <input type="time" name="time" class="form-control" required>
+                </div>
+    
+                <div class="col-md-6">
+                  <select name="department" class="form-control" required>
+                    <option value="" disabled selected>Select Department</option>
+                    <option value="general">General Consultation</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="dermatology">Dermatology</option>
+                    <option value="pediatrics">Pediatrics</option>
+                  </select>
+                </div>
+    
+                <div class="col-md-12">
+                  <textarea name="notes" class="form-control" rows="3" placeholder="Additional Notes (optional)"></textarea>
+                </div>
+    
+                <div class="col-md-12 text-center">
+                  <div class="loading">Processing...</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your appointment request has been sent. We'll confirm shortly!</div>
+                  <button type="submit">Book Appointment</button>
+                </div>
+    
+              </div>
+            </form>
+          </div><!-- End Appointment Form -->
+    
+        </div>
+      </div>
+    </section>
+    
+
+    </section><!-- /Starter Section Section -->
+
+  </main>
+
+ {% endblock %}
